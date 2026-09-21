@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a0a0a;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+    border-bottom: 1px solid #222;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 24px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    color: #888;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    max-width: 900px;
+}
+
+.hero h1 span {
+    color: #777;
+}
+
+.intro {
+    max-width: 650px;
+    color: #aaa;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.button {
+    padding: 13px 22px;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.primary {
+    background: white;
+    color: black;
+}
+
+.secondary {
+    color: white;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 120px 0;
+    border-top: 1px solid #222;
+}
+
+.section-label {
+    color: #666;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #252525;
+    padding: 30px;
+    min-height: 330px;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-number {
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    color: #999;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.tags span {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #aaa;
+    border-radius: 20px;
+}
+
+
+/* ABOUT */
+
+.about-text {
+    max-width: 750px;
+    color: #aaa;
+    font-size: 21px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #222;
+    padding: 40px 30px;
+    text-align: center;
+    color: #666;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+}
